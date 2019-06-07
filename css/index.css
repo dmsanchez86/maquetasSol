@@ -1,0 +1,123 @@
+body{
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+}
+
+img{
+    max-width: 100%
+}
+
+.text-blue{
+    color: #255a8c;
+}
+
+.bg-gray{
+    background: #e6e6e6;
+}
+
+.text-gray{
+    color: #797979;
+}
+p.text-gray{
+    font-size: 1.8rem;
+}
+
+.p-0{
+    padding: 0;
+}
+
+.m-0{
+    padding: 0;
+}
+
+.fw{
+    font-weight: bold;
+}
+
+.fw500{
+    font-weight: 500;
+}
+
+.m-1{ margin: 0.5rem }
+.m-2{ margin: 1rem }
+.m-3{ margin: 1.3rem }
+.m-4{ margin: 2rem }
+.m-5{ margin: 3.5rem }
+
+.mb-1{ margin-bottom: 0.5rem }
+.mb-2{ margin-bottom: 1rem }
+.mb-3{ margin-bottom: 1.3rem }
+.mb-4{ margin-bottom: 2rem }
+.mb-5{ margin-bottom: 3.5rem }
+
+.mt-1{ margin-top: 0.5rem }
+.mt-2{ margin-top: 1rem }
+.mt-3{ margin-top: 1.3rem }
+.mt-4{ margin-top: 2rem }
+.mt-5{ margin-top: 3.5rem }
+
+.mr-1{ margin-right: 0.5rem }
+.mr-2{ margin-right: 1rem }
+.mr-3{ margin-right: 1.3rem }
+.mr-4{ margin-right: 2rem }
+.mr-5{ margin-right: 3.5rem }
+
+.ml-1{ margin-left: 0.5rem }
+.ml-2{ margin-left: 1rem }
+.ml-3{ margin-left: 1.3rem }
+.ml-4{ margin-left: 2rem }
+.ml-5{ margin-left: 3.5rem }
+
+.p-1{ padding: 0.5rem }
+.p-2{ padding: 1rem }
+.p-3{ padding: 1.3rem }
+.p-4{ padding: 2rem }
+.p-5{ padding: 3.5rem }
+
+.pb-1{ padding-bottom: 0.5rem }
+.pb-2{ padding-bottom: 1rem }
+.pb-3{ padding-bottom: 1.3rem }
+.pb-4{ padding-bottom: 2rem }
+.pb-5{ padding-bottom: 3.5rem }
+
+.pt-1{ padding-top: 0.5rem }
+.pt-2{ padding-top: 1rem }
+.pt-3{ padding-top: 1.3rem }
+.pt-4{ padding-top: 2rem }
+.pt-5{ padding-top: 3.5rem }
+
+.pr-1{ padding-right: 0.5rem }
+.pr-2{ padding-right: 1rem }
+.pr-3{ padding-right: 1.3rem }
+.pr-4{ padding-right: 2rem }
+.pr-5{ padding-right: 3.5rem }
+
+.pl-1{ padding-left: 0.5rem }
+.pl-2{ padding-left: 1rem }
+.pl-3{ padding-left: 1.3rem }
+.pl-4{ padding-left: 2rem }
+.pl-5{ padding-left: 3.5rem }
+
+.herramientas-seccion{}
+.herramientas-item{
+    border: solid 2px #ababab;
+    border-radius: 2px;
+    transition: 300ms ease;
+}
+.herramientas-item:hover{
+    background: #255a8c;
+    border-color: #255a8c;
+}
+.herramientas-item:hover .herramientas-item-titulo{ color: white; }
+.herramientas-item-imagen{
+    position: relative
+}
+.herramientas-item:hover .herramientas-item-imagen img:first-child{ display: none }
+.herramientas-item:hover .herramientas-item-imagen img:last-child{ display: block }
+.herramientas-item-imagen img{
+}
+.herramientas-item-imagen img:last-child{ display: none }
+.herramientas-item-titulo h3{
+    font-size: 1.65rem;
+    padding: 0 .5rem;
+}
