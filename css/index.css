@@ -19,7 +19,7 @@ img{
     color: #797979;
 }
 p.text-gray{
-    font-size: 1.8rem;
+    font-size: 1.9rem;
 }
 
 .p-0{
@@ -104,6 +104,9 @@ p.text-gray{
     border-radius: 2px;
     transition: 300ms ease;
 }
+.herramientas-item a{
+    text-decoration: none;
+}
 .herramientas-item:hover{
     background: #255a8c;
     border-color: #255a8c;
@@ -120,4 +123,14 @@ p.text-gray{
 .herramientas-item-titulo h3{
     font-size: 1.65rem;
     padding: 0 .5rem;
+}
+
+.seccion-banner img{
+    width: 100%;
+}
+
+@media (min-width: 1200px){
+    .herramientas-item-titulo h3{
+        font-size: 1.4rem;
+    }
 }
