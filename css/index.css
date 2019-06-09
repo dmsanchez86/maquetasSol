@@ -191,6 +191,34 @@ a:focus{
     text-decoration: none;
 }
 
+.ejes-item{
+    position: relative;
+    overflow: hidden;
+}
+
+.ejes-item:focus .ejes-descripcion,
+.ejes-item:hover .ejes-descripcion{
+    top: 0;
+    line-height: 1.3;
+}
+
+.ejes-imagen{
+    width: 100%;
+}
+.ejes-descripcion{
+    position: absolute;
+    top: 80%;
+    left: 0;
+    right: 0;
+    height: 100%;
+    background: rgba(37, 90, 140, 0.85);
+    padding: 1rem 2rem;
+    font-size: 2.5rem;
+    line-height: 2;
+    transition: 200ms ease-in-out;
+    overflow: auto;
+}
+
 @media (min-width: 992px){
     .bg2-gray-lg{
         background: #e6e6e6;
@@ -213,6 +241,11 @@ a:focus{
     .mb-sm-5{ margin-bottom: 3rem }
     .pt-sm-0{ padding-top: 0 }
     .pb-sm-0{ padding-bottom: 0 }
+
+    .ejes-descripcion{
+        font-size: 2rem;
+        top: 77%;
+    }
 }
 
 @media (max-width: 768px){
@@ -238,6 +271,15 @@ a:focus{
     .miembros-section img:not(.main){
         width: 45%;
     }
+
+    .mb-xs-4 {
+        margin-bottom: 1.5rem
+    }
+
+    .ejes-descripcion{
+        top: 89%;
+        line-height: 1.5;
+    }
 }
 @media (max-width: 575px){
 
@@ -259,11 +301,19 @@ a:focus{
         max-width: 100%;
         width: 49%;
     }
+    .ejes-descripcion {
+        top: 87%;
+    }
 }
 @media (max-width: 420px) {
 
     .aliados-section img {
         max-width: 100%;
         width: auto;
+    }
+
+    .ejes-descripcion {
+        top: 84%;
+        font-size: 1.5rem;
     }
 }
