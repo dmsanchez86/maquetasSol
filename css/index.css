@@ -1,45 +1,26 @@
 body{
     font-family: 'Raleway', sans-serif;
     font-size: 16px;
+    word-break: break-word;
 }
 
-img{
-    max-width: 100%
-}
+img{ max-width: 100% }
 
-.text-blue{
-    color: #255a8c;
-}
+.text-blue{ color: #255a8c; }
+.text-white{ color: white; }
 
-.bg2-gray{
-    background: #e6e6e6;
-}
+.bg2-gray{ background: #e6e6e6; }
+.bg3-gray{ background: #808080 !important; }
 
-.text-gray{
-    color: #797979;
-}
-p.text-gray{
-    font-size: 1.9rem;
-}
-p.text-gray-middle{
-    font-size: 1.6rem;
-}
+.text-gray{ color: #797979; }
+p.text-gray{ font-size: 1.9rem; }
+p.text-gray-middle{ font-size: 1.6rem; }
 
-.p-0{
-    padding: 0;
-}
+.p-0{ padding: 0; }
+.m-0{ margin: 0; }
 
-.m-0{
-    margin: 0;
-}
-
-.fw{
-    font-weight: bold;
-}
-
-.fw500{
-    font-weight: 500;
-}
+.fw{ font-weight: bold; }
+.fw500{ font-weight: 500; }
 
 .m-1{ margin: 0.5rem }
 .m-2{ margin: 1rem }
@@ -141,25 +122,18 @@ p.text-gray-middle{
     top: -4px;
 }
 
-.df{
-    display: flex;
+.title-light{
+    font-size: 4.5rem;
+    font-weight: 400;
 }
 
-.aic{
-    align-items: center;
-}
-
-.aie{
-    align-items: end;
-}
-
-.jcc{
-    justify-content: center;
-}
-
-.jce{
-    justify-content: end;
-}
+.df{ display: flex;}
+.db{ display: block;}
+.aic{ align-items: center; }
+.aie{ align-items: end; }
+.jcc{ justify-content: center; }
+.jce{ justify-content: end;}
+.tdn{ text-decoration: none;}
 
 .main-observatorio .container{
     background: none !important;
@@ -188,6 +162,33 @@ p.text-gray-middle{
     margin-right: 1rem;
     background: #255a8c;
     border-radius: 50%;
+}
+
+.aliados-section{}
+.aliados-section img{
+    display: inline-block;
+    vertical-align: top;
+    max-width: 100px;
+}
+.aliados-section .img2 img{
+    max-width: 180px;
+}
+
+.miembros-button{
+    padding: 1rem;
+    min-width: 55%;
+    border-radius: 50px;
+    background: #255a8c;
+    font-size: 3.5rem;
+}
+
+.section-main .panel-title {
+    font-size: 3rem;
+}
+
+a:hover,
+a:focus{
+    text-decoration: none;
 }
 
 @media (min-width: 992px){
@@ -220,6 +221,10 @@ p.text-gray-middle{
     }
     .item-wrap {
         margin: 2.5rem 0;
+    }
+
+    .title-light {
+        font-size: 2.5rem;
     }
 }
 @media (max-width: 575px){
