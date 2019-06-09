@@ -198,6 +198,18 @@ p.text-gray-middle{ font-size: 1.6rem; }
     font-size: 3rem;
 }
 
+.cuadros-section{}
+.cuadros-section .bg2-gray{
+    transition: 300ms ease;
+}
+.cuadros-section .bg2-gray:hover {
+    background: #255a8c;
+}
+.cuadros-section .bg2-gray:hover h4,
+.cuadros-section .bg2-gray:hover p{
+    color: white;
+}
+
 a:hover,
 a:focus{
     text-decoration: none;
