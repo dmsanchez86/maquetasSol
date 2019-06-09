@@ -1,0 +1,150 @@
+<html lang="en">
+
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="icon" href="img/favicon.png" type="image/png">
+        <title>Observatorio Inicio</title>
+        <!-- Bootstrap CSS -->
+        <link href="https://fonts.googleapis.com/css?family=Raleway:100,300,400,500,600,700,900&display=swap"
+            rel="stylesheet">
+        <link rel="stylesheet" href="http://www.cali.gov.co/media/plugins/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" href="http://www.cali.gov.co/media/plugins/fontawesome/4.6.3/css/font-awesome.min.csss">
+        <link rel="stylesheet" href="http://idesc.cali.gov.co/servicios/movis/estilos.css">
+        <!-- main css -->
+        <link rel="stylesheet" href="css/index.css">
+    </head>
+
+    <body>
+
+        <!-- Comienzo -->
+        
+        <main class="main-observatorio">
+            <div class="section-slider-wrap">
+                <div class="container p-0">
+                    <div class="main" style="width:100%">
+                        <div class="slides" style="width:100%">
+                            <img src="images/slider_1.jpg" style="width:100%" />
+                            <img src="images/slider_2.jpg" style="width:100%" />
+                            <img src="images/slider_3.jpg" style="width:100%" />
+                            <img src="images/slider_4.jpg" style="width:100%" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <section class="section-main mt-5">
+                <div class="container">
+                    <div class="row mb-3 mb-sm-0">
+                        <div class="col-xs-12">
+                            <h1 class="title title-icon text-blue fw">Ejes temáticos</h1>
+                            <p class="text-gray text-gray-middle fw500 pr-4 mt-sm-0 pt-3 pt-sm-0 mb-3">
+                                El Observatorio de Seguridad realiza una agrupación de delitos, conformando los
+                                siguientes ejes de análisis: delitos contra la vida, delitos contra la propiedad e
+                                investigaciones especiales. Esto con el objetivo de lograr concordancia en el análisis
+                                de los diferentes delitos que tienen lugar en la ciudad, buscando identificar las
+                                condiciones de seguridad y los factores asociados a la comisión de estos.
+                            </p>
+                            <p class="text-gray text-gray-middle fw500 pr-4 mt-sm-0 mb-3">
+                                El Observatorio de Seguridad deja disponible para descarga los análisis que realiza en
+                                los diferentes ejes.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="ejes-section mt-5 pt-5 mb-5 pb-5 pt-sm-0">
+                <div class="container">
+                    <div class="row mb-5 mb-sm-3">
+                        <div class="col-xs-12 col-sm-6 mb-xs-4 col-lg-5 col-lg-offset-1">
+                            <div class="ejes-item">
+                                <img src="images/ejes_tematicos_2.jpg" alt="" class="ejes-imagen">
+                                <div class="ejes-descripcion fw text-white">
+                                    Delitos contra la vida
+                                    y la integridad personal y
+                                    otras causas de muertes externas
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 mb-xs-4 col-lg-5">
+                            <div class="ejes-item">
+                                <img src="images/ejes_tematicos_3.jpg" alt="" class="ejes-imagen">
+                                <div class="ejes-descripcion fw text-white">
+                                    Delitos contra el patrimonio
+                                    Económico
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mb-sm-3">
+                        <div class="col-xs-12 col-sm-6 mb-xs-4 col-lg-5 col-lg-offset-1">
+                            <div class="ejes-item">
+                                <img src="images/ejes_tematicos_4.jpg" alt="" class="ejes-imagen">
+                                <div class="ejes-descripcion fw text-white">
+                                    Otros hechos delictivos
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 mb-xs-4 col-lg-5">
+                            <div class="ejes-item">
+                                <img src="images/ejes_tematicos_5.jpg" alt="" class="ejes-imagen">
+                                <div class="ejes-descripcion fw text-white">
+                                    Investigaciones Especiales
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="banner-section bg2-gray pt-5 pb-5">
+                <div class="container">
+                    <div class="row text-center">
+                        <div class="col-xs-12">
+                            <h1 class="title title-light text-blue mb-4">
+                                Conocimiento Técnico
+                            </h1>
+                        </div>
+                        <div class="col-xs-12">
+                            <p class="text-gray text-gray-middle fw500 pr-4 mt-sm-0 pt-3 pt-sm-0 mb-5">
+                                Especialistas analizan los indicadores de delito para desarrollar planes y estrategias orientadas a mejorar la seguridad de la ciudad
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- final -->
+        
+        
+        <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+        <script src="http://idesc.cali.gov.co/servicios/movis/js/jquery.slides.js"></script>
+        <script type="text/javascript" src="http://www.cali.gov.co/media/plugins/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script>
+            $(function () {
+                $(".slides").slidesjs({
+                    play: {
+                        active: true,
+                        // [boolean] Generate the play and stop buttons.
+                        // You cannot use your own buttons. Sorry.
+                        effect: "slide",
+                        // [string] Can be either "slide" or "fade".
+                        interval: 7000,
+                        // [number] Time spent on each slide in milliseconds.
+                        auto: true,
+                        // [boolean] Start playing the slideshow on load.
+                        swap: true,
+                        // [boolean] show/hide stop and play buttons
+                        pauseOnHover: false,
+                        // [boolean] pause a playing slideshow on hover
+                        restartDelay: 2500
+                        // [number] restart delay on inactive slideshow
+                    }
+                });
+            });
+        </script>
+    </body>
+</html>
