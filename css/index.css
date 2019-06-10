@@ -244,6 +244,47 @@ a:focus{
     overflow: auto;
 }
 
+.tabs-section{}
+.tabs-section .nav{ 
+    text-align: center;
+    border: none;
+}
+.tabs-section .nav li{
+    float: none;
+    display: inline-block;
+    vertical-align: top;
+}
+.tabs-section .nav li.active a,
+.tabs-section .nav li a{
+    border: none !important;
+    color: #666666;
+    font-weight: bold;
+    position: relative;
+}
+.tabs-section .nav li a:before{
+    position: absolute;
+    bottom: -10%;
+    width: 0%;
+    height: 2px;
+    content: '';
+    background: #666666;
+    transition: 200ms ease;
+    margin: auto;
+    left: 0;
+    right: 0;
+}
+.tabs-section .nav li.active a:before,
+.tabs-section .nav li a:hover:before{
+    width: 55%;
+}
+.tabs-section .nav li a:hover{
+    background: none !important;
+}
+.tabs-section .table{ 
+    font-weight: 600; 
+    font-size: 1.5rem;
+}
+
 @media (min-width: 992px){
     .bg2-gray-lg{
         background: #e6e6e6;
