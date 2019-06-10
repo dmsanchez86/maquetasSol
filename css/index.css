@@ -287,7 +287,7 @@ a:focus{
 
 .quotes-section img{ width: 100%; }
 .quotes-wrap{
-    height: 47%;
+    min-height: 300px;
     position: relative;
 }
 
@@ -323,12 +323,17 @@ a:focus{
         background: #e6e6e6;
     }
 }
+@media (min-width: 1400px){
+    .quotes-wrap {
+        min-height: 390px;
+    }
+}
 @media (min-width: 1200px){
     .herramientas-item-titulo h3{
         font-size: 1.4rem;
     }
     .quotes-wrap {
-        height: 80%;
+        height: 350px;
     }
     .quotes-wrap .title-quotes {
         padding: 0 5rem;
