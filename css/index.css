@@ -9,6 +9,7 @@ img{ max-width: 100% }
 .text-blue{ color: #255a8c; }
 .text-white{ color: white; }
 
+.bg2-blue{ background: #255a8c; }
 .bg2-gray{ background: #e6e6e6; }
 .bg3-gray{ background: #808080 !important; }
 
@@ -135,7 +136,7 @@ p.text-gray-middle{ font-size: 1.6rem; }
 .jce{ justify-content: end;}
 .tdn{ text-decoration: none;}
 
-.main-observatorio .container{
+.main-observatorio .container:not(.bg2-gray){
     background: none !important;
 }
 
