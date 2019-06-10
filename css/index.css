@@ -136,8 +136,8 @@ p.text-gray-middle{ font-size: 1.6rem; }
 .jce{ justify-content: end;}
 .tdn{ text-decoration: none;}
 
-.main-observatorio .container:not(.bg2-gray){
-    background: none !important;
+.main-observatorio .container{
+    background-image: none !important;
 }
 
 .item-wrap {
