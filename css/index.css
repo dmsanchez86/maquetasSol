@@ -9,6 +9,7 @@ img{ max-width: 100% }
 .text-blue{ color: #255a8c; }
 .text-white{ color: white; }
 
+.bg2-blue{ background: #255a8c; }
 .bg2-gray{ background: #e6e6e6; }
 .bg3-gray{ background: #808080 !important; }
 
@@ -135,7 +136,7 @@ p.text-gray-middle{ font-size: 1.6rem; }
 .jce{ justify-content: end;}
 .tdn{ text-decoration: none;}
 
-.main-observatorio .container{
+.main-observatorio .container:not(.bg2-gray){
     background: none !important;
 }
 
@@ -243,6 +244,80 @@ a:focus{
     overflow: auto;
 }
 
+.tabs-section{}
+.tabs-section .nav{ 
+    text-align: center;
+    border: none;
+}
+.tabs-section .nav li{
+    float: none;
+    display: inline-block;
+    vertical-align: top;
+}
+.tabs-section .nav li.active a,
+.tabs-section .nav li a{
+    border: none !important;
+    color: #666666;
+    font-weight: bold;
+    position: relative;
+}
+.tabs-section .nav li a:before{
+    position: absolute;
+    bottom: -10%;
+    width: 0%;
+    height: 2px;
+    content: '';
+    background: #666666;
+    transition: 200ms ease;
+    margin: auto;
+    left: 0;
+    right: 0;
+}
+.tabs-section .nav li.active a:before,
+.tabs-section .nav li a:hover:before{
+    width: 55%;
+}
+.tabs-section .nav li a:hover{
+    background: none !important;
+}
+.tabs-section .table{ 
+    font-weight: 600; 
+    font-size: 1.5rem;
+}
+
+.quotes-section img{ width: 100%; }
+.quotes-wrap{
+    height: 47%;
+    position: relative;
+}
+
+.quotes-wrap .title-quotes{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    max-height: 8rem;
+    font-size: 4rem;
+    padding: 0 2rem;
+    text-align: center;
+    font-weight: 400;
+}
+.quotes-wrap .title-quotes .fa{
+    color: #3f73a5;
+    font-size: 5rem;
+    position: absolute;
+}
+.quotes-wrap .title-quotes .fa:first-child{
+    top: -1rem;
+    left: 1rem;
+}
+.quotes-wrap .title-quotes .fa:last-child{
+    right: 1rem;
+    bottom: -2rem;
+}
+
 @media (min-width: 992px){
     .bg2-gray-lg{
         background: #e6e6e6;
@@ -251,6 +326,19 @@ a:focus{
 @media (min-width: 1200px){
     .herramientas-item-titulo h3{
         font-size: 1.4rem;
+    }
+    .quotes-wrap {
+        height: 80%;
+    }
+    .quotes-wrap .title-quotes {
+        padding: 0 5rem;
+    }
+    .quotes-wrap .title-quotes .fa:first-child {
+        left: 3rem;
+    }
+
+    .quotes-wrap .title-quotes .fa:last-child {
+        right: 3rem;
     }
 }
 
@@ -264,6 +352,7 @@ a:focus{
     .mb-sm-3{ margin-bottom: 1.5rem }
     .mb-sm-5{ margin-bottom: 3rem }
     .pt-sm-0{ padding-top: 0 }
+    .pt-sm-3{ padding-top: 1.5rem }
     .pb-sm-0{ padding-bottom: 0 }
 
     .ejes-descripcion{
@@ -303,6 +392,35 @@ a:focus{
     .ejes-descripcion{
         top: 89%;
         line-height: 1.5;
+    }
+    .quotes-wrap {
+        height: auto;
+    }
+    .quotes-wrap .title-quotes {
+        position: relative;
+        top: inherit;
+        bottom: inherit;
+        left: inherit;
+        right: inherit;
+        margin: 3rem 0;
+        max-height: inherit;
+        font-size: 3rem;
+        padding: 0 2rem;
+    }
+
+    .quotes-wrap .title-quotes .fa {
+        font-size: 4rem;
+        position: relative;
+    }
+
+    .quotes-wrap .title-quotes .fa:first-child {
+        top: inherit;
+        left: inherit;
+    }
+
+    .quotes-wrap .title-quotes .fa:last-child {
+        right: inherit;
+        bottom: inherit;
     }
 }
 @media (max-width: 575px){
